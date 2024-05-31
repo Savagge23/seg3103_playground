@@ -1,5 +1,5 @@
-# seg3103_playground
-This project is designed to calculate the division reults of two different numbers. For the newmath java file you have the compile the Main class and then run the Main class. For the python file you have to compile and run the newmath.py file and run the testing filing to complete the tests.
+# Seg3103_playground Lab2
+This project was designed to test the TC's for exercise with the registration tool. The TC's for exercise 1 can be seen in the table down below and the screenshot of the results of these TC's can be seen in the directory Screenshots with the respective screenshots labeled based upon the TC's. For exercise 2 the goal was to develop parameterized tests for DateNextDateExceptionTest.java and DateNextDateOkTest.java with all the tests successfully passing. 
 
 | Test Case | Expected results | Actual Results | Verdict |
 | --- | --- | --- | --- |
