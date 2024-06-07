@@ -263,4 +263,18 @@ class DateTest {
     assertEquals(expectedTomorrow, today.nextDate());
   }
 
+  @Test
+  void nextDate_tc39() {
+    Date today = new Date(2024, 2, 28);
+    Date expectedTomorrow = new Date(2024, 2, 29);
+    assertEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void DateEquals_tc40() {
+    Date d1 = new Date(1954, 7, 14);
+    Date d2 = new Date(1954, 7, 15);
+    assertFalse(d1.equals(d2));
+  }
+
 }
