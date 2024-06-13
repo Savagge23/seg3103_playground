@@ -21,6 +21,9 @@ public class TicTacToe {
     }
 
     public void playX(int i, int j) {
+        if(table[i][j] != " "){
+            throw new IllegalArgumentException("Spot already has been marked");
+        }
         table[i][j] = "X";
     }
 
@@ -57,7 +60,7 @@ public class TicTacToe {
             return false;
         }
 
-        
+
 
 
     }
