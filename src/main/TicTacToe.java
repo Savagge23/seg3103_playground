@@ -31,6 +31,9 @@ public class TicTacToe {
     }
 
     public void playO(int i, int j) {
+        if(isGameWon() == true){
+            throw new IllegalArgumentException("Game has already been Won");
+        }
         if(table[i][j] != " "){
             throw new IllegalArgumentException("Spot already has been marked");
         }
