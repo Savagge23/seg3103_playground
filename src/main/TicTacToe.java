@@ -29,6 +29,14 @@ public class TicTacToe {
     }
 
     public static boolean tableisFull(){
-        return true;
+        boolean a = false;
+        for(int i=0; i<3; i++){
+            for(int j=0; j<3; j++){
+                if(table[i][j] != " "){
+                    a = true;
+                }
+            }
+        }
+        return a;
     }
 }
