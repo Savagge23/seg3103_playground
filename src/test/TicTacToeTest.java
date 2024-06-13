@@ -31,7 +31,23 @@ public class TicTacToeTest {
         assertEquals("O", newGame.getCell(2,1));
     }
 
+    @Test
+    void tableisFull_tc04(){
+        TicTacToe newGame = new TicTacToe();
+        assertFalse(newGame.tableisFull());
+
+        for(int i=0; i<3; i++){
+            for(int j=0; j<3; j++){
+                newGame.playX(1,j);
+                }
+            }
+        assertTrue(newGame.tableisFull());
+        }
+
+
+    }
 
 
 
-}
+
+

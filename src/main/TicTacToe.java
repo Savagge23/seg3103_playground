@@ -27,4 +27,8 @@ public class TicTacToe {
     public void playO(int i, int j){
         table[i][j] = "O";
     }
+
+    public static boolean tableisFull(){
+        return true;
+    }
 }
