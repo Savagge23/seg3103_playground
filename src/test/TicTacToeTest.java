@@ -69,13 +69,13 @@ public class TicTacToeTest {
     void playMove_invalid_TC07(){
         TicTacToe newGame = new TicTacToe();
         newGame.playO(0,1);
-        newGame.playX(1,1);
+        newGame.playX(1,0);
         newGame.playO(0,2);
-        newGame.playX(2,1);
-        newGame.playO(0,3);
+        newGame.playX(1,1);
+        newGame.playO(0,0);
         assertThrows(
                 IllegalArgumentException.class,
-                () -> newGame.playX(3,1)
+                () -> newGame.playX(1,2)
     );
     }
 
