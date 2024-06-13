@@ -23,4 +23,8 @@ public class TicTacToe {
     public void playX(int i, int j){
         table[i][j] = "X";
     }
+
+    public void playO(int i, int j){
+
+    }
 }

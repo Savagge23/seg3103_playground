@@ -24,5 +24,14 @@ public class TicTacToeTest {
         assertEquals("X", newGame.getCell(2,1));
     }
 
+    @Test
+    void playMove_tc03(){
+        TicTacToe newGame = new TicTacToe();
+        newGame.playO(2,1);
+        assertEquals("O", newGame.getCell(2,1));
+    }
+
+
+
 
 }
