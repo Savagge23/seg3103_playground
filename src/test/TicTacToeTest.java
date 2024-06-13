@@ -65,6 +65,20 @@ public class TicTacToeTest {
     );
     }
 
+    @Test
+    void playMove_invalid_TC07(){
+        TicTacToe newGame = new TicTacToe();
+        newGame.playO(0,1);
+        newGame.playX(1,1);
+        newGame.playO(0,2);
+        newGame.playX(2,1);
+        newGame.playO(0,3);
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> newGame.playX(3,1)
+    );
+    }
+
 
 
 }
