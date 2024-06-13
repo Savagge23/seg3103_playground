@@ -40,7 +40,10 @@ public class TicTacToe {
     }
 
     public static boolean isGameWon(){
-        return true;
+        if(table[0][1] == "X" && table[1][1] == "X" && table[2][1] == "X"){
+            return true;
+        }
+        return false;
     }
 
 
