@@ -21,6 +21,6 @@ public class TicTacToe {
     }
 
     public void playX(int i, int j){
-
+        table[i][j] = "X";
     }
 }
