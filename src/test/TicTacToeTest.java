@@ -44,6 +44,17 @@ public class TicTacToeTest {
         assertTrue(newGame.tableisFull());
     }
 
+    @Test
+    void gameWon_tc05(){
+        TicTacToe newGame = new TicTacToe();
+        assertFalse(newGame.isGameWon());
+        newGame.playX(0,1);
+        newGame.playX(1,1);
+        newGame.playX(2,1);
+
+        assertTrue(newGame.isGameWon());
+    }
+
 }
 
 

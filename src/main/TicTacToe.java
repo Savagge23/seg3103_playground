@@ -39,5 +39,9 @@ public class TicTacToe {
         return true;
     }
 
+    public static boolean isGameWon(){
+        return true;
+    }
+
 
 }
