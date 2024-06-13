@@ -38,7 +38,7 @@ public class TicTacToeTest {
 
         for(int i=0; i<3; i++){
             for(int j=0; j<3; j++){
-                newGame.playX(1,j);
+                newGame.playX(i,j);
                 }
             }
         assertTrue(newGame.tableisFull());
