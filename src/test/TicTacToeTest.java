@@ -17,5 +17,12 @@ public class TicTacToeTest {
         }
     }
 
+    @Test
+    void playMove_tc02(){
+        TicTacToe newGame = new TicTacToe();
+        newGame.playX(2,1);
+        assertEquals("X", newGame.getCell(2,1));
+    }
+
 
 }

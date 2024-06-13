@@ -19,4 +19,8 @@ public class TicTacToe {
     public static String getCell(int i, int j){
         return table[i][j];
     }
+
+    public void playX(int i, int j){
+
+    }
 }
