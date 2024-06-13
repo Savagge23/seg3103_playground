@@ -55,6 +55,16 @@ public class TicTacToeTest {
         assertTrue(newGame.isGameWon());
     }
 
+    @Test
+    void playMove_invalid_TC06(){
+        TicTacToe newGame = new TicTacToe();
+        newGame.playO(2,1);
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> newGame.playX(2,1)
+    );
+    }
+
 
 
 }
