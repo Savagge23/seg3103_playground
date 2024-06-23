@@ -16,9 +16,10 @@ public class Twitter {
     }
   }
 
-  public boolean isMentionned(String name) {
+  public boolean isMentionned(Object name) {
     String tweet = loadTweet();
-    return tweet.contains("@" + name);
+    String name1 = name.toString();
+    return tweet.contains("@" + name1);
   }
 
 }
