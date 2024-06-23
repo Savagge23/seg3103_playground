@@ -59,7 +59,8 @@ class TwitterTest {
         Twitter twitter = partialMockBuilder(Twitter.class)
             .addMockedMethod("loadTweet")
             .createMock();
-        expect(twitter.loadTweet()).andReturn("hello @me");
+
+        expect(twitter.loadTweet()).andReturn("hello @me").times(2);
         replay(twitter);
 
         boolean actual;
@@ -68,6 +69,7 @@ class TwitterTest {
 
         actual = twitter.isMentionned("you");
         assertEquals(false, actual);
+
        // Assuming a tweet like "hello @me"
       // isMentionned("me") should be true
        // isMentionned("you") should be false
@@ -78,7 +80,7 @@ class TwitterTest {
         Twitter twitter = partialMockBuilder(Twitter.class)
                 .addMockedMethod("loadTweet")
                 .createMock();
-        expect(twitter.loadTweet()).andReturn("hello @meat");
+        expect(twitter.loadTweet()).andReturn("hello @meat").times(2);
         replay(twitter);
 
         boolean actual;
